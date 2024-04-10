@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detona Ralph</title>
+  <link rel="shortcut icon" href="./src/images/vanellope.png" type="image/png" width="32" height="32">
+
+  <!--Styles CSS -->
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  </head>
+
+  <body>
+    <main>
+      <div class="menu">
+
+        <div class="menu-time">
+          <h2>Time Left</h2>
+          <h2 id="time-left">0</h2> 
+        </div>
+
+        <div class="menu-score">
+          <h2>Your Score</h2>
+          <h2 id="score">0</h2>
+        </div>
+
+        <div class="menu-lives">
+          <img src="./src/images/vanellope.png" alt="Vanellope">
+          <h2 id="life-contador"></h2>
+        </div>
+        
+      </div>
+      <div class="menu-btn">
+        <button class="start" onclick="newGame()">New Game</button>
+        <button class="continue" onclick="lifeCount()"> Continue </button>
+        <button class="continue" onclick="resetGame()"> Reset GAme </button>
+      </div>
+      
+      <div class="messageToPlay">
+        <div>
+          <span class="btnFechar">&times;</span>
+        </div>
+        <div>
+          <h3>Bem vindo ao Jogo Detona Ralph</h3>
+        <h4>Consiga o máximo de pontos (click) ao acertar o Ralph, a partida terá 3 rodadas de níveis diferentes,<br> Boa sorte!</h4>
+        </div>        
+      </div>
+
+      <div class="panel">
+        <div class="panel-row">
+          <div class="square enemy" id="1"></div>
+          <div class="square" id="2"></div>
+          <div class="square" id="3"></div>
+        </div>
+      
+        <div class="panel-row">
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+          <div class="square" id="6"></div>
+        </div>
+      
+        <div class="panel-row">
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+          <div class="square" id="9"></div>
+        </div>
+        <div class="messageRound">
+          <!-- <span class="btnFechar">&times;</span> -->
+        </div>
+      </div>
+     
+      <div class="gameOver">
+        <img src="./src/images/vanellope2.png" alt="Vanellope">
+      </div>   
+    </main>
+
+    <!--Scripts JS -->
+    <script src="./src/scripts/engine.js"></script>
+  </body>
+
+</html>

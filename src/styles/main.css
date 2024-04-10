@@ -1,0 +1,194 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+  background-image: url(../images/jwmfsysd.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% 75%;
+
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 250px;
+  margin: 5px auto;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: rgba(252, 3, 3, 0.5);
+  border: none;
+  transition: background-color .3s ease-in-out;
+}
+
+button:hover {
+  background-color: rgba(254, 254, 254, 0.946);
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.gameOver {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 1rem auto;
+  text-align: center;
+  gap: 1rem;
+  text-shadow: #000 1px 1px;
+}
+
+.gameOver h2 {
+  color: #ff0;
+  font-size: 1.5rem;
+  text-shadow: #000 1px 1px;
+}
+
+.gameOver img{
+  display: flex;
+  width: auto;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 25px;
+  left: calc(50% - 300px);
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 25px;
+  border-bottom: 5px solid #ffd700;
+}
+
+.menu-score h2:nth-child(1),
+.menu-time h2:nth-child(1) {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.menu-time {
+  display: block;
+}
+
+.menu-time h2:nth-child(2)::before {
+  content: ":";
+}
+
+.menu-time h2:nth-child(2)::after {
+  content: "s";
+  padding-left: 5px;
+}
+
+.menu-lives {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-lives img {
+  height: 75px;
+}
+
+#life-contador::before {
+  width: 50px;
+  content: "x:";
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageToPlay {
+  display: none;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 10px;
+  width: 600px;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: calc(50% - 300px);
+  background-color: rgba(250, 235, 215, 0.679);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.messageToPlay h3, .messageRound h3 {
+  color: #924512;
+  margin: 10px 0;
+  text-shadow: #000 1px 1px;
+}
+
+.messageToPlay h4, .messageRound h4 {
+  margin: 15px 0;
+  text-align: center;
+  text-shadow: #fff 1px 1px;
+  line-height: 1.5rem;
+}
+
+.btnFechar {
+  color: #ff0000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: #000 2px 1px;
+}
+
+.panel {
+  display: flex;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.square {
+  height: 150px;
+  width: 150px;
+  border: 1px solid #000;
+  background-color: rgba(255, 157, 127, 0.5);
+  cursor: pointer;
+}
+
+.enemy {
+  background-image: url(../images/DETONA\ RALPH.png);
+  background-size: contain;
+
+}
+
+#score::after {
+  content: "pts";
+  padding-left: 5px;
+}
+
+.messageRound {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 100px;
+  position: absolute;
+
+  bottom: -30%;
+  background-color: rgba(250, 235, 215, 0.679);
+  border-radius: 10px;
+  box-shadow: #000 2px 1px;
+}
